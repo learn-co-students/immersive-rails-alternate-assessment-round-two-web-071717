@@ -1,0 +1,10 @@
+<h1 style="margin-top:50px;font-size:2rem">Tell us about this pizza you had at <%= @pizzeria.name %></h1>
+
+<%= form_for(@pizza) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+
+  <%= f.submit %>
+<% end %>
